@@ -9,6 +9,7 @@ const { initDB } = require('./db');
 const productRoutes = require('./routes/productRoutes');
 
 const app = express();
+app.set('trust proxy', 1);
 
 // --- Middleware Setup ---
 
